@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <main className="h-screen w-screen p-3 flex flex-col gap-4">
+    <div>
       <Title>Home</Title>
       <div>
         <Subtitle>This is a simple login page</Subtitle>
@@ -16,6 +16,6 @@ export default function Home() {
       <Link href="/login">
         <Button>Go to login page</Button>
       </Link>
-    </main>
+    </div>
   );
 }

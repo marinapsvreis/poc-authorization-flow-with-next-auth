@@ -1,4 +1,5 @@
 "use client";
+import Card from "@/components/card";
 import Title from "@/components/typography/title";
 import { Button } from "@/components/ui/button";
 import { signOut } from "next-auth/react";
@@ -13,9 +14,11 @@ export default function Denied() {
   };
 
   return (
-    <main className="h-screen w-screen p-3 flex flex-col gap-4">
-      <Title>Access Denied! You arent an ADMIN!</Title>
-      <Button onClick={handleLogout}>Go to Home</Button>
-    </main>
+    <div>
+      <Card>
+        <Title>Access Denied! You arent an ADMIN!</Title>
+        <Button onClick={handleLogout}>Go to Home</Button>
+      </Card>
+    </div>
   );
 }
