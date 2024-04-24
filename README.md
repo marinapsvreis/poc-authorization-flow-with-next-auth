@@ -49,7 +49,7 @@ const user = {
 
 To it:
 
-````
+```
 const user = {
           id: "1",
           email: "marina@gmail.com",
